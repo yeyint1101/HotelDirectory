@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Directory</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="sidebar-header">
+        <h3>Menu</h3>
+        <button id="btnClose" onclick="hideMenu()">
+          <img src="assets/icon/close.svg" alt="" />
+        </button>
+      </div>
+      <div class="profile">
+        <p>ဟိုတယ်လမ်းညွှန်</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#hero" onclick="hideMenu()">
+              <img src="assets/icon/home.svg" alt="home" />
+              ပင်မစာမျက်နှာ
+            </a>
+          </li>
+          <li>
+            <a href="#distinct" onclick="hideMenu()">
+              <img src="assets/icon/location.svg" alt="distinct" />
+              ထင်ရှားသောနေရာများ
+            </a>
+          </li>
+          <li>
+            <a href="#about" onclick="hideMenu()">
+              <img src="assets/icon/info.svg" alt="about" />
+              ကျွန်ုပ်တို့အကြောင်း
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onclick="hideMenu()">
+              <img src="assets/icon/contact.svg" alt="contact" />
+              ဆက်သွယ်ရန်
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div id="blockScreen" onclick="hideMenu()"></div>
+    <main>
+      <header>
+        <div class="header-info">
+          <button id="btnMenu" onclick="showMenu()">
+            <img src="assets/icon/menu.svg" alt="" />
+          </button>
+          <h3>Hotel Directory</h3>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#hero" data-tooltip="ပင်မစာမျက်နှာ" class="tooltip">
+                <img src="assets/icon/home.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#distinct"
+                data-tooltip="ထင်ရှားသောနေရာများ"
+                class="tooltip"
+              >
+                <img src="assets/icon/location.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                data-tooltip="ကျွန်ုပ်တို့အကြောင်း"
+                class="tooltip"
+              >
+                <img src="assets/icon/info.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#contact" data-tooltip="ဆက်သွယ်ရန်" class="tooltip">
+                <img src="assets/icon/contact.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <section id="hero" class="hero-section">Hero Section</section>
+        <section id="distinct" class="distinct-section">
+          Distinct Location
+        </section>
+        <section id="about" class="about-section">About Us</section>
+      </div>
+      <footer>
+        <p>
+          <small
+            >&copy; <span id="rightYr"></span> YYH. All rights reserved.</small
+          >
+        </p>
+      </footer>
+    </main>
+    <span id="upArrow">
+      <a href="#hero">
+        <img src="assets/icon/uparrow.svg" alt="" />
+      </a>
+    </span>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
